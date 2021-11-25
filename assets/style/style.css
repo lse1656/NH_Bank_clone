@@ -519,6 +519,7 @@
   flex-wrap: wrap;
 }
 .infor .infor-group .infor-banner {
+  position: relative;
   width: 267px;
 }
 .infor .infor-group .infor-banner.banner01 {
@@ -538,6 +539,17 @@
   text-overflow: ellipsis;
   overflow: hidden;
   color: #6f6f6f;
+}
+.infor .infor-group .infor-banner .infor-list li a:hover {
+  text-decoration: underline;
+}
+.infor .infor-group .infor-banner .more-btn {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  background: url('../images/btn_detail_more.png') no-repeat center;
 }
 .infor .infor-group .link-list {
   display: flex;
@@ -599,7 +611,10 @@
   margin-bottom: 25px;
   font-size: 16px;
 }
-.infor .customer-service .service-list .security a::after {
+.infor .customer-service .service-list .security {
+  position: relative;
+}
+.infor .customer-service .service-list .security a:first-child::after {
   display: inline-block;
   width: 52px;
   height: 66px;
@@ -608,6 +623,14 @@
 }
 .infor .customer-service .service-list .security a:hover {
   color: #fff;
+}
+.infor .customer-service .service-list .security .more-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  background: url('../images/btn_detail_more.png') no-repeat center;
 }
 
 /* global-footer */
